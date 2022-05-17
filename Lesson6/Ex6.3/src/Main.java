@@ -11,16 +11,15 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int arraySize = sc.nextInt(); //size of an array
         int[] arr = new int[arraySize]; //elements of the array separated by spaces
-        int n = sc.nextInt(); //the number n
 
         for (int i = 0; i < arr.length; i++) {
                 arr[i] = sc.nextInt();
         }
-
+        int n = sc.nextInt(); //the number n
         int sum = 0;
         for (int value : arr) {
             if (value > n) {
-                sum ++;
+                sum += value;
             }
         }
         System.out.println(sum);//Sum all the array elements greater than n. Only a single number represents the sum
